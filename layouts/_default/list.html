@@ -28,7 +28,11 @@
 				</header>
 				<div class="mr-loop-excerpt">
 					<div class="mr-excerpt">
-						{{ .Summary }}
+            {{ with .Description }}
+              {{ . }}
+            {{ else }}
+              {{ .Summary }}
+            {{ end }}
 					</div>
 				</div>
 			</div>
