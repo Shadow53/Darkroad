@@ -14,8 +14,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -114,7 +113,7 @@ body {
 }
 
 /*** Animation ***/
-.mr-main-nav li, .entry-tags li, .tagcloud a {
+.mr-main-nav li, .post__tags li, .tagcloud a {
 	-webkit-transition: 0.25s ease-out;
 	-moz-transition: 0.25s ease-out;
 	transition: 0.25s ease-out;
@@ -323,23 +322,23 @@ a:hover {
 }
 
 /*** Lists ***/
-.entry-content ul {
+.post__content ul {
 	list-style: square;
 }
 
-.entry-content ol {
+.post__content ol {
 	list-style: decimal;
 }
 
-.entry-content ul, .entry-content ol {
+.post__content ul, .post__content ol {
 	margin: 0 0 20px 40px;
 }
 
-.entry-content ul ul, .entry-content ol ol {
+.post__content ul ul, .post__content ol ol {
 	margin: 0 0 0 40px;
 }
 
-.entry-content li {
+.post__content li {
 	margin-bottom: 5px;
 }
 
@@ -505,7 +504,7 @@ select {
 }
 
 /*** Posts/Pages ***/
-.entry-header, .page-header {
+.post__header, .page-header {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
@@ -546,11 +545,11 @@ select {
 	vertical-align: middle;
 }
 
-.meta-categories, .entry-meta-date, .mr-meta-date {
+.meta-categories, .post__meta-date, .mr-meta-date {
 	vertical-align: middle;
 }
 
-.entry-meta {
+.post__meta {
 	margin-top: 10px;
 	margin-top: 0.625rem;
 	padding: 5px 10px;
@@ -558,39 +557,38 @@ select {
 	border-bottom: 1px dotted #ebebeb;
 }
 
-.entry-thumbnail {
+.post__thumbnail {
 	max-width: 1030px;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
 
-.entry-thumbnail img {
+.post__thumbnail img {
 	width: 100%;
 }
 
-.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4,
-.entry-content h5, .entry-content h6, .entry-content p,
-.entry-content blockquote, .entry-content .mr-row,
-.entry-content .mr-video-container {
+.post__content h1, .post__content h2, .post__content h3, .post__content h4,
+.post__content h5, .post__content h6, .post__content p,
+.post__content blockquote, .post__content .mr-row {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
 
-.entry-content blockquote p:last-child {
+.post__content blockquote p:last-child {
 	margin: 0;
 }
 
-.entry-content a {
+.post__content a {
 	font-weight: 600;
 	color: #0a66c6;
 }
 
-.entry-content a:hover {
+.post__content a:hover {
 	color: #0a66c6;
 	text-decoration: underline;
 }
 
-.entry-tags {
+.post__tags {
 	font-size: 12px;
 	font-size: 0.75rem;
 	color: #fff;
@@ -599,7 +597,7 @@ select {
 	margin-bottom: 1.25rem;
 }
 
-.entry-tags li {
+.post__tags li {
 	float: left;
 	font-weight: 700;
 	margin: 0 6px 6px 0;
@@ -608,17 +606,17 @@ select {
 	text-transform: uppercase;
 }
 
-.entry-tags li:hover {
+.post__tags li:hover {
 	background: #0a66c6;
 }
 
-.entry-tags a, .entry-tags a:hover {
+.post__tags a, .post__tags a:hover {
 	display: block;
 	color: #fff;
 	padding: 10px 15px;
 }
 
-.entry-tags .icon {
+.post__tags .icon {
 	float: left;
 	padding: 8px;
 	margin-right: 6px;
@@ -817,26 +815,26 @@ iframe, embed, object, video {
 	max-width: 100%;
 }
 
-.entry-content .alignnone {
+.post__content .alignnone {
 	display: block;
 	margin: 20px 0;
 	margin: 1.25rem 0;
 }
 
-.entry-content .aligncenter {
+.post__content .aligncenter {
 	display: block;
 	margin: 20px auto;
 	margin: 1.25rem auto;
 }
 
-.entry-content .alignleft {
+.post__content .alignleft {
 	display: inline;
 	float: left;
 	margin: 5px 20px 20px 0;
 	margin: 0.3125rem 1.25rem 1.25rem 0;
 }
 
-.entry-content .alignright {
+.post__content .alignright {
 	display: inline;
 	float: right;
 	margin: 5px 0 20px 20px;
@@ -1369,7 +1367,7 @@ textarea {
 		text-align: center;
 	}
 
-	.mr-header-title, .entry-title {
+	.mr-header-title, .post__title {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
@@ -1378,7 +1376,7 @@ textarea {
 		margin-top: 20px;
 	}
 
-	.entry-meta {
+	.post__meta {
 		padding: 5px 0;
 	}
 
@@ -1439,7 +1437,7 @@ textarea {
 		margin: 0;
 	}
 
-	.entry-meta-categories, .entry-meta-comments {
+	.post__meta-categories, .post__meta-comments {
 		display: none;
 	}
 
@@ -1461,11 +1459,11 @@ textarea {
 		padding-bottom: 25px;
 	}
 
-	.entry-content ul, .entry-content ol {
+	.post__content ul, .post__content ol {
 		margin: 0 0 20px 20px;
 	}
 
-	.entry-content ul ul, .entry-content ol ol {
+	.post__content ul ul, .post__content ol ol {
 		margin: 0 0 0 20px;
 	}
 
