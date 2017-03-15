@@ -11,6 +11,18 @@
 {{ if .RSSLink }}<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" href="{{ .RSSLink }}">{{ end }}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600" type="text/css" media="all" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css" media="all" />
+{{ if and (isset .Site.Params "background") (isset .Site.Params.background "src") }}
+{{ with .Site.Params.background }}
+  <style>
+  	body {
+      background-image: url("{{ .src }}");
+  		background-attachment: fixed;
+      {{ if (.fit_width) }}background-size: contain;{{ end }}
+      background-repeat:{{ if (.tile) }}repeat{{ else }}no-repeat{{ end }};
+    }
+	</style>
+{{ end }}
+{{ end }}
 <script type="text/javascript" src="{{ .Site.BaseURL }}js/scripts.js"></script>
 </head>
 <body class="home blog {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}mr-left-sb{{ else }}mr-right-sb{{ end }} mr-mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
